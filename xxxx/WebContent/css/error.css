@@ -1,0 +1,46 @@
+body{
+	margin: 0px;
+	background: #2F4F4F;
+}
+form{	
+	width: 40%;
+	height: 500px;
+	margin: auto;	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -20%;
+	margin-top: -250px;
+}
+fieldset{
+	border-radius: 5px;
+}
+.div_login{
+	text-align: center;
+	border-radius: 5px;
+	background: #228B22;
+}
+img{
+	width: 35px;
+	height: 35px;
+	/*margin-bottom: 5px; */
+}
+.div_inco{
+	/*margin-top: 5px;*/
+	display: inline-block;
+	width: 35px;
+}
+.div_tip{
+	visibility: hidden;
+	width: 30px;
+	background: black;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+	top: 100%;
+	left: 0px;
+}
+.div_inco:hover .div_tip{
+	visibility: visible;
+}

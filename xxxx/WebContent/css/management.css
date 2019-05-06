@@ -1,0 +1,122 @@
+/** {
+	box-sizing: border-box;
+}*/
+body{
+	margin: 0px;
+	background: #2F4F4F;
+}
+hr{
+	margin:2px;
+}
+.div_management{
+	width: 1200px;
+	height: 700px;
+	margin: auto;	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -600px;
+	margin-top: -350px;
+	text-align: center;
+	border-radius: 10px;
+	background: #228B22;
+}
+.div_top{
+	width: 100%;
+	height: 100px;
+	/*background: #5AA72A;*/
+	border-radius: 10px;
+}
+.div_bottom{
+	width: 100%;
+	height: 600px;
+	/*background: #77AC49;*/
+	border-radius: 10px;
+}
+.table_top{
+	width: 100%;
+	height: 100px;
+}
+input{
+	outline:0;
+}
+select{
+	outline:0;
+}
+td{
+	width: 20%;
+	height: 50%;
+	text-align: center;
+	font-size: 18px;
+}
+td input{
+	width: 90%;
+	height: 90%;
+	border-radius: 10px;
+	font-size: 18px;
+}
+td select{
+	width: 90%;
+	height: 90%;
+	border-radius: 10px;
+	font-size: 18px;
+}
+.list_table{
+	width: 100%;
+	border-style: solid;
+	border-color:gray;
+	border-size:1px;
+	border-collapse:collapse;
+}
+.list_td{
+	border-style: solid;
+	border-color:gray;
+	border-size:1px;
+}
+.list_th{
+	border-style: solid;
+	border-color:gray;
+	border-size:1px;
+}
+.modify_table{
+	width: 100%;
+	height: 20%;
+}
+.modify_table th,td{
+	width: 12.5%;
+	height: 50%;
+}
+.addclass_y{
+	display: table;
+}
+.revise{
+	display: none;
+}
+.div_chaxun{
+	width: 1200px;
+	height: 60px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	margin:0px;
+	background:#008000;
+	color:#333;
+}
+.p_center{
+	box-sizing: border-box;
+	width: 70%;
+	height: 100%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	margin:0px;
+}
+.p_right{
+	box-sizing: border-box;
+	width: 20%;
+	height: 100%;
+	text-align: right;
+	font-size: 20px;
+	padding-right: 30px;
+	margin:0px;
+}

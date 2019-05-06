@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/registration.css">
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<title>registration</title>
+	<script type="text/javascript">
+		function click_back(){
+			if(confirm("确认取消注册并返回登录页?")){
+				window.location.href="login.html";
+			}
+		}
+		function click_submit(){
+			var username=$("#username").val();
+			var password=$("#password").val();
+			var password2=$("#password2").val();
+			var mail=$("#mail").val();
+			if(username==null||username==""){
+				alert("用户名不能为空");
+			}else if(password==null||password==""){
+				alert("密码不能为空");
+			}else if(password2==null||password2==""){
+				alert("再次输入密码不能为空");
+			}else if(password!=password2){
+				alert("两次输入密码不一致");
+			}else if(mail==null||mail==""){
+				alert("邮箱不能为空");
+			}else{
+				$("#bt_submit").click();
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="/xxxx/RegistrationServlet" method="post">
+	<fieldset>	
+		<legend><h1>Registration</h1></legend>
+		<div class="div_login">
+
+		<input type="text" placeholder="Username" id="username" name="username"><br>
+		<input type="text" placeholder="Password" id="password" name="password"><br>
+		<input type="text" placeholder="Confirm New Password" id="password2" name="password2"><br>
+		<input type="text" placeholder="E-mail" id=mail name="mail"><br>
+
+		<button id="bt_submit" type="submit" style="display: none;">Registe</button>
+		<button type="button" onclick="click_submit()">Registe</button>
+		<button type="reset">Reset</button>
+		<button type="button" onclick="click_back()">Return</button>
+		<hr>
+
+		<div class="div_inco">
+		<a href="tanwanlanyue.html" ><img src="icon/CaptainAmerica.ico"></a>
+		<span class="div_tip">主页</span>
+		</div>
+		
+		<div class="div_inco">
+		<a href="login.html"><img src="icon/Deadpool.ico"></a>
+		<span class="div_tip">登录</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/FantasticFour.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/Flash.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/Hulk.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/IronMan.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/Superman.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+		
+		
+		</div>
+	</fieldset>
+	</form>
+</body>
+</html>

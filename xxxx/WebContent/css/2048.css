@@ -1,0 +1,75 @@
+	body{
+		background: #BBE5CA;
+	}	
+	.div_all {
+	    width: 600px;
+	    height: 830px;
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -415px;
+	    left: 50%;
+	    margin-left: -300px;
+	    border-radius: 10px;
+	    background: rgb(0, 128, 128);
+	}
+	#table_top {
+	    width: 600px;
+	    height: 200px;
+	    text-align: center;
+	    border-radius: 10px;
+	    border-width: 0px;
+	}
+	#table_top tr td {
+	    width: 100px;
+	    height: 100px;
+	    text-align: center;
+	    border-radius: 10px;
+	    border-width: 0px;
+	    padding: 0px;
+	}
+	.p_2048{
+		width: 400px;
+	    height: 100px;
+	    text-align: center;
+	    font-size: 70px;
+	    font-weight: bold;
+	    color: rgb(255, 245, 238);
+	    line-height: 150%;
+	    margin: 0px;
+	}
+	div{
+	    display: block;
+	}
+	.input_sql {
+	    width: 90px;
+	    height: 70px;
+	    text-align: center;
+	    font-size: 20px;
+	    color: rgb(255, 248, 220);
+	    font-weight: bold;
+	    outline: 0px;
+	    border-width: 0px;
+	    padding: 0px;
+	    border-radius: 10px;
+	    background: rgb(119, 136, 153);
+	}
+	.div_2p{
+		width: 400px;
+	    height: 100px;
+	    text-align: left;
+	    font-size: 20px;
+	    line-height: 220%;
+	    margin: 0px;
+	}
+	.div_newgame{
+		width: 190px;
+	    height: 50px;
+	    color: rgb(255, 255, 255);
+	    font-size: 25px;
+	    background: rgb(32, 130, 16);
+	    border-radius: 10px;
+	    outline: 0px;
+	}
+	input{
+		outline:0;
+	}

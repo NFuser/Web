@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<title>Login</title>
+	
+	<script type="text/javascript">
+		function click_registration(){
+			window.location.href="registration.html";
+		}
+		function click_submit(){
+			var username=$("#username").val();
+			var password=$("#password").val();
+			if(username==null||username==""){
+				alert("用户名不能为空");
+			}else if(password==null||password==""){
+				alert("密码不能为空");
+			}else{
+				$("#bt_submit").click();
+			}
+		}
+		function enter() { 
+     		var username=document.getElementById("username").value;//获取form中的用户名 
+      		var password=document.getElementById("password").value; 
+      		var regex=/^[/s]+$/;//声明一个判断用户名前后是否有空格的正则表达式 
+      		if(regex.test(username)||username.length==0)//判定用户名是否前后有空格或者用户名是否为空 
+        	{ 
+          		alert("用户名格式不对"); 
+          		return false; 
+        	} 	
+      		if(regex.test(password)||password.length==0)//同上述内容 
+      		{ 
+        		alert("密码格式不对"); 
+        		return false; 
+      		} 
+      			return true; 
+    	} 
+	</script>
+</head>
+<body>
+	<form action="/xxxx/LoginServlet" method="post" onsubmit="enter()">
+	<fieldset>	
+		<legend><h1>Login</h1></legend>
+		<div class="div_login">
+
+		<input type="text" placeholder="Username" id="username" name="username"><br>
+		<input type="password" placeholder="Password" id="password" name="password"><br>
+		
+
+		<button id="bt_submit" type="submit" style="display: none;">Log on</button>
+		<button type="button" onclick="click_submit()">Log on</button>
+		<button type="button" onclick="click_registration()">Registe</button>
+		<hr>
+
+		<div class="div_inco">
+		<a href="tanwanlanyue.html" ><img src="icon/CaptainAmerica.ico"></a>
+		<span class="div_tip">主页</span>
+		</div>
+		
+		<div class="div_inco">
+		<a href="login.html"><img src="icon/Deadpool.ico"></a>
+		<span class="div_tip">登录</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/FantasticFour.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/Flash.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/Hulk.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/IronMan.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+
+		<div class="div_inco">
+		<a href=""><img src="icon/Superman.ico"></a>
+		<span class="div_tip">暂无</span>
+		</div>
+		
+		</div>
+	</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+*{
+	margin: 0px;
+}
+/*全局样式，消除外边框*/
+body{
+	overflow-x: auto;
+}
+/*横向下拉条，保证主页面不被压缩*/
+h1{
+	height: 100px;
+	text-align: center;
+	margin: 0px;
+	background: #0000FF;
+	font-size: 50px;
+	line-height: 100px;
+}
+/*标题样式（贪玩蓝月）,居中*/
+.p_top{
+	background: #FF8C00;
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-size: 15px;
+}
+/*顶部p标签中a标签hover样式*/
+.div_div{
+	margin:0px; 
+}
+/*横幅外边框，消边距*/
+.div_left{
+	text-align: left;
+	font-family:"Microsoft YaHei";
+	color:#dd0;
+	font-size: 35px;
+	background: #B22222;
+}
+/*横幅左字体*/
+.div_center{
+	text-align: center;
+	font-family:"FZShuTi";
+	color: #DA70D6;
+	font-size: 35px;
+	background: #DC143C;
+}
+/*横幅中字体*/
+.div_right{
+	text-align: right;
+	font-family: "STXinwei";
+	color: red;
+	font-size: 35px;
+	background: #8B0000;
+}
+/*横幅右字体*/
+
+.div_background{
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/2.jpg);
+	background-size:100% 100%; 
+	background-attachment: fixed;	
+}
+/*主内容部分蓝色背景,背景不动拉伸显示*/
+.div_content{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background:#FFFACD;
+	text-align: center;
+}
+/*主内容中 中间部分*/
+.div_outer{
+	display: block;	
+}	
+.div_inside{
+	display: none;
+	/*opacity: 0;*/
+}
+.div_outer:hover .div_inside{
+	display: block;
+	/*opacity: 1;
+	transition: 2s;*/
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	height: 40%
+	border: 3px;
+	transition: 2s;
+}
+/*中间表格部分样式，动画效果延长2s*/
+table:hover{
+	width: 60%;
+	height: 40%
+}
+/*隐藏动画效果*/
+td,th{
+	background-color: #FFFF00;
+}
+/*单元格背景色*/
+td:hover{
+	background-color: #FF0000;
+}
+th:hover{
+	background-color: #FF0000;
+}
+/*隐藏效果*/
+img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*插入图片样式*/
+a{
+	text-decoration: none;
+}
+a:link{
+	color: #6495ED;
+}
+a:visited:{
+	color: #FF4500;
+}
+a:hover{
+	color: #DC143C;
+}
+a:active{
+	color: #FFFF00;
+}
+/*全局a标签样式*/
+.pre_bottom{
+	margin: 1px;
+	margin-bottom: 0px; 
+	font-size: 20px;
+	color: #FFD700;
+	background: #FF4500;
+}
+/*控制输出css*/
+
+
+.div_bottom{
+	margin-bottom: 0px;
+	text-align: center;
+	background: #FFD700;
+}
+/*pre和底部q外标签css*/
+.p_bottom{
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+/*底部css*/
+
+
+#left_span{
+	display: block;
+	width: 160px;
+	height: 210px;
+	border: 1px solid red;
+	background-image: url(../img/4.jpg);
+	position: fixed;
+	top: 50%;
+	left: 8px;
+	margin-top: -80px;
+	z-index: 1;
+}
+/*左广告span标签css*/
+#left_button{
+	border: 0px;
+	background: #FFFFFF;
+	opacity: 0.1;
+	position: fixed;
+	top: 50%;
+	left: 8px;
+	margin-top: -80px;
+	z-index: 3;
+}
+/*左广告button标签css*/
+#right_span{
+	display: block;
+	width: 160px;
+	height: 210px;
+	border: 1px solid red;
+	background-image: url(../img/5.jpg);
+	position: fixed;
+	top: 50%;
+	right: 8px;
+	margin-top: -80px;
+	z-index: 1;
+}
+/*右广告span标签css*/
+#right_button{
+	border: 0px;
+	background: #FFFFFF;
+	opacity: 0.1;
+	position: fixed;
+	top: 50%;
+	right: 150px;
+	margin-top: -80px;
+	z-index: 3;
+}
+/*右广告button标签css*/
+video{
+	width: 100%;
+	height: 282px;
+}
+/*视频css*/
+abbr[title]{
+	text-decoration: none;
+}
+/*消除abbr标签底部虚线css*/
+
+
+
+ul {
+	position:sticky;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 0px;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #111;
+}
+.active {
+	color: white;
+	background-color: #4CAF50;
+}
+/*导航栏标签，粘性定位*/
+
